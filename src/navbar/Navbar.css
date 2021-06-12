@@ -1,0 +1,29 @@
+.navbar--container {
+  background-color: whitesmoke;
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.navbar--title {
+  padding-left: 50px;
+}
+
+.navbar--signState {
+  padding-right: 150px;
+}
+
+.profile {
+  width: 50px;
+}
+.assignment_title {
+  text-align: left;
+}
+.assignment_namenum {
+  margin: 10px;
+}
+.expl {
+  color: rgb(155, 154, 154);
+  font-size: xx-small;
+}

@@ -1,0 +1,30 @@
+.card_item {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.Item_box {
+  width: 300px;
+  border: 1px solid black;
+  box-shadow: 5px 5px 9px #888888;
+  border-radius: 3px;
+  margin: 50px;
+}
+.instock_content {
+  font-size: xx-small;
+  color: rgb(161, 161, 161);
+}
+.img_box {
+  height: 300px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+.imgItem {
+  width: 230px;
+  margin: auto;
+}
+.price_tag {
+  font-size: smaller;
+  color: rgb(150, 0, 0);
+}

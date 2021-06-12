@@ -1,0 +1,16 @@
+.errorMessage {
+  color: red;
+}
+
+.login_item {
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+.login_box {
+  margin: auto;
+  width: 400px;
+  border: 1px solid black;
+  box-shadow: 10px 10px 5px #888888;
+  border-radius: 20px;
+}
