@@ -8,7 +8,10 @@ const SignedOutNavbar = () => {
     <nav className="navbar">
       <div className="navbar--container">
         <div className="assignment_title">
-          <div className="assignment_namenum">CC Assignment-3</div>
+          <div className="assignment_namenum">
+            CC Assignment-3{" "}
+            <span className="instock_content"> version 1.5 </span>
+          </div>
           <div className="assignment_namenum">
             <span className="expl">Student ID & Student Name: </span>
             S3762087 - JiaHao Ai

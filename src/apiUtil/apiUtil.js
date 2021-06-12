@@ -1,7 +1,7 @@
 import axios from "axios";
 
 // const baseUrl = "http://localhost:8080/api/v1";
-const baseUrl = "http://13.239.65.207/api/v1";
+const baseUrl = "http://52.62.203.162/api/v1";
 
 // Start LoginForm
 export const login = ({ uuid }) =>

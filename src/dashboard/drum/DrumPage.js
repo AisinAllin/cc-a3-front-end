@@ -21,7 +21,7 @@ const DrumPage = () => {
   }, [flag]);
   return (
     <div>
-      <h1>Durm</h1>
+      <h1>Drum</h1>
       <div className="pop_muisic_ins_box">
         {popMusIns.map((e) => (
           <ItemCard item={e} flag={flag} setFlag={setFlag} />
