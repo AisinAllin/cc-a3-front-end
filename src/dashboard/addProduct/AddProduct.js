@@ -39,6 +39,10 @@ const AddProduct = () => {
     error: "",
   });
   const handleBack = () => {
+    getMusicUrl();
+    history.push("/dashboard");
+  };
+  const handleCancel = () => {
     history.push("/dashboard");
   };
 
@@ -63,6 +67,20 @@ const AddProduct = () => {
 
   /*
    */
+  const getMusicUrl = async () => {
+    console.log(musicId);
+
+    const getURLRes = await apiUtils.getMusicImgUrl({ musicId });
+    if (getURLRes.status === 200) {
+      console.log(getURLRes.data);
+      const id = `${musicId}`;
+      const link = getURLRes.data;
+      console.log(id);
+      console.log(link);
+      const lambdaPutRes = await apiUtils.lambdaPutData({ id, link });
+    }
+  };
+
   const [progress, setProgress] = useState(0);
   const [selectedFile, setSelectedFile] = useState(null);
   const [form, setForm] = useState(false);
@@ -197,7 +215,7 @@ const AddProduct = () => {
             </div>
           </form>
 
-          <Button className="button" onClick={handleBack}>
+          <Button className="button" onClick={handleCancel}>
             Cancel
           </Button>
         </>

@@ -13,6 +13,21 @@ export const login = ({ uuid }) =>
     },
   });
 
+export const lambdaGetData = ({ id }) =>
+  axios({
+    method: "get",
+    url: `https://be2jfl9xll.execute-api.ap-southeast-2.amazonaws.com/cca3apigateway/image/${id}`,
+  });
+
+export const lambdaPutData = ({ id, link }) =>
+  axios({
+    method: "post",
+    url: `https://be2jfl9xll.execute-api.ap-southeast-2.amazonaws.com/cca3apigateway/image`,
+    data: {
+      id,
+      link,
+    },
+  });
 export const getPopularMusicIns = () =>
   axios({
     method: "get",
